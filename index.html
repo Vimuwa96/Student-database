@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Database Programme</title>
+
+    <link rel="stylesheet" href="css/database.css" />
+
+      <!--FontAWSOME-->
+  <script src="https://kit.fontawesome.com/1a3b5235e0.js" crossorigin="anonymous"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container pt-3">
+      <ul class="">
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">Search</a></li>
+        <li><a href="">Training Programme</a></li>
+        <li><a href="">Examination</a></li>
+        <li><a href="">Log off</a></li>
+      </ul>
+    </div>
+
+    <div class="container pb-3">
+      <div
+        class="row"
+        style="
+          background-color: rgb(48, 46, 46);
+          padding: 10px;
+          border-radius: 10px;
+        "
+      >
+        <div class="col-md-4 text-center d-flex justify-content-center">
+          <input
+            type="text"
+            class="form-control w-75"
+            placeholder="Search......"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-success" type="button" id="button-addon2">
+            Search
+          </button>
+        </div>
+        <div class="col-md-4 text-center d-flex justify-content-center">
+          <input
+            type="text"
+            class="form-control w-75"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+        <div class="col-md-4 text-center d-flex justify-content-center">
+          <input
+            type="text"
+            class="form-control w-75"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <td style="background-color: rgb(207, 204, 204)">
+                      Name with Initials
+                    </td>
+                    <td>Dr. D.M.N.S. Disanayake</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(207, 204, 204)">
+                      Name in full
+                    </td>
+                    <td>
+                      Disanayake Mudiyanselage Nisansala Sandamali Disanayake
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(207, 204, 204)">
+                      Permanent Address
+                    </td>
+                    <td>Andahena, Andigama</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(207, 204, 204)">
+                      Office Address
+                    </td>
+                    <td>Andahena, Andigama</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(207, 204, 204)">NIC No</td>
+                    <td>877161471</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(207, 204, 204)">
+                      SLMC No:
+                    </td>
+                    <td>34234</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(207, 204, 204)">
+                      PGIM Email:
+                    </td>
+                    <td><a href="mailto:m34234@pgim.cmb.ac.lk" id="copy">m34234@pgim.cmb.ac.lk</a></td>
+                    <td><button class="btn btn-success" onclick="copyEvent('copy')" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-sharp fa-solid fa-copy"></i> <small>copy</small></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <img
+            src="imgs/photo-1633332755192-727a05c4013d.jpg"
+            alt=""
+            class="d-none d-sm-block text-center"
+            style="height: 200px; width: 200px; border-radius: 50%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td>Date of Birth</td>
+                  <td>03/Aug/1987</td>
+                  <td>Civil Status:</td>
+                  <td>Married</td>
+                </tr>
+                <tr>
+                  <td>Fax</td>
+                  <td>-</td>
+                  <td>Mobile :</td>
+                  <td><a href="tel:+94711836374">071-1836374</a></td>
+                </tr>
+                <tr>
+                  <td>PGIM Roll No :</td>
+                  <td>-</td>
+                  <td>Email :</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Remark</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <p
+          style="
+            text-transform: uppercase;
+            background-color: rgb(28, 28, 29);
+            padding: 10px;
+            color: white;
+          "
+          class="text-center"
+        >
+          Degree Status
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <td>Date of Birth</td>
+                    <td>03/Aug/1987</td>
+                    <td>Civil Status:</td>
+                    <td>Married</td>
+                  </tr>
+                  <tr>
+                    <td>Fax</td>
+                    <td>-</td>
+                    <td>Mobile :</td>
+                    <td><a href="tel:+94711836374">071-1836374</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <p
+          style="
+            text-transform: uppercase;
+            background-color: rgb(28, 28, 29);
+            padding: 10px;
+            color: white;
+          "
+          class="text-center"
+        >
+          Examinations
+        </p>
+      </div>
+      <table class="table table-hover text-center">
+        <thead>
+          <th>Date</th>
+          <th>Exam Name</th>
+          <th>Payments</th>
+          <th>Attempts</th>
+          <th>Result</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8/Jan/2021</td>
+            <td>MD Surgery / Selection (Essay& Viva)</td>
+            <td></td>
+            <td>3</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>8/Jan/2021</td>
+            <td>MD Surgery / Selection (Essay& Viva)</td>
+            <td></td>
+            <td>3</td>
+            <td>Pass</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
